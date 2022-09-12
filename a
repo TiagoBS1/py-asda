@@ -1,0 +1,19 @@
+from ast import And, Num
+
+
+num = int(input("escreva um numero de 1 a 100: "))
+ 
+if num > 1 and num < 100:
+ 
+    
+    for i in range(2, num):
+ 
+      
+        if (num % i) == 0:
+            print(num, " nao e um numero primo")
+            break
+    else:
+        print(num, "e um numero primo")
+ 
+else:
+    print(num, "nao e um numero primo")
